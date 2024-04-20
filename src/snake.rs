@@ -79,11 +79,7 @@ impl Snake{
         (head_block.x, head_block.y)
     }
 
-    pub fn move_forward(&mut self, dir: Option<Direction>){
-        match dir {
-            Some(d) => self.direction = d ,
-            None => (),
-        }
+ 
 
         let (last_x, last_y) : (i32, i32) = self.head_position();
 
